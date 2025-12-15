@@ -1,16 +1,36 @@
-## Hi there 👋
+👋 Hi, I’m Sapair!
 
-<!--
-**Sapair-og/Sapair-og** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I’m a Computer Science student who loves coding, AI/ML, and building useful projects.
+I enjoy learning new technologies and turning ideas into real applications.
 
-Here are some ideas to get you started:
+🚀 What I’m interested in
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🤖 Artificial Intelligence & Machine Learning
+
+🧠 Deep Learning & Computer Vision
+
+💻 Python, C++, JavaScript
+
+🌐 Web Development (HTML, CSS, basic backend)
+
+📊 Data & APIs
+
+🎮 Small game & fun projects
+
+🛠️ What I’m working on
+
+Building AI/ML projects for learning and practice
+
+Creating real-world problem-solving apps
+
+Exploring LLMs, embeddings, and smart systems
+
+📌 My goal
+
+To improve my skills step by step, contribute to open-source, and grow as a software & AI engineer.
+
+📫 Let’s connect
+
+GitHub: You’re already here 😄
+
+Open to collaborations and learning together!
