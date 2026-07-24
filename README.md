@@ -45,6 +45,13 @@ I am a Computer Science student and researcher focused on **Materials Informatic
 
 ---
 
+## 🎮 Contribution Space Shooter
+My daily contribution grid transformed into a retro arcade space shooter battle! Commit blocks act as targets for the spaceship.
+
+![Space Shooter Game](./game.gif)
+
+---
+
 ## 📊 GitHub Metrics
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=Sapair-og&show_icons=true&theme=radial&hide_border=true" height="150" alt="GitHub Stats" />
