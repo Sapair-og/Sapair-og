@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,50:7C3AED,100:DB2777&height=220&section=header&text=Yashvardhan%20Singh%20Sarangdevot&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Python%20%26%20GenAI%20Applications%20Developer&descAlignY=56&descSize=18" alt="Yashvardhan Singh Sarangdevot" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,50:7C3AED,100:DB2777&height=220&section=header&text=Yashvardhan%20Singh%20Sarangdevot&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Python%20%E2%80%A2%20GenAI%20Applications%20Developer&descAlignY=56&descSize=18" alt="Yashvardhan Singh Sarangdevot" />
 </p>
 
 <p align="center">
