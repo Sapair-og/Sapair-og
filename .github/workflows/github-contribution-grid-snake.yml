@@ -17,6 +17,8 @@ jobs:
     timeout-minutes: 5
 
     steps:
+      - uses: actions/checkout@v4
+
       # Generates a snake game from a github user ($GITHUB_REPOSITORY_OWNER) contributions graph, output a svg animation at <summary_out_path>
       - name: Generate github-contribution-grid-snake.svg
         uses: platane/snk/svg-only@v3
@@ -25,6 +27,12 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Self-hosted stats card (public stats instances are rate-limited)
+      - name: Generate stats.svg
+        run: python .github/scripts/stats.py "${{ github.repository_owner }}" dist/stats.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
