@@ -23,46 +23,63 @@ Hello! I'm **Yashvardhan Singh Sarangdevot** (known as **Sapair-og** on GitHub).
 
 ---
 
-## 🌟 Featured Projects
+## 🌟 Main Projects
 
 <table>
   <tr>
-    <td width="50%">
-      <h3>🩺 Pneumonia Detection</h3>
-      <p>A deep learning model trained on chest X-rays to accurately classify and detect pneumonia patterns, leveraging CNN architectures for medical image diagnosis.</p>
+    <td colspan="2">
+      <h3>🛡️ CogniCode — Autonomous Code Remediation Engine</h3>
+      <p>A multi-agent system for debugging code and fixing vulnerabilities. It audits code with Python AST, recalls CWE/OWASP fix patterns from a FAISS episodic memory, runs specialised Security and Big-O profiling agents, generates patches with Pytest suites, and <b>self-heals in a sandbox loop</b> until the tests pass. It then opens a GitHub Pull Request automatically.</p>
       <p>
-        <a href="https://github.com/Sapair-og/pneumonia_detection"><img src="https://img.shields.io/badge/View_Repo-black?style=flat-square&logo=github" alt="Repository"/></a>
-        <img src="https://img.shields.io/badge/Python-blue?style=flat-square" alt="Python"/>
-        <img src="https://img.shields.io/badge/PyTorch-orange?style=flat-square" alt="PyTorch"/>
-      </p>
-    </td>
-    <td width="50%">
-      <h3>💬 Chat with PDF</h3>
-      <p>An intelligent application that enables users to upload PDF documents and engage in a natural conversation with them, utilizing LangChain and LLM APIs.</p>
-      <p>
-        <a href="https://github.com/Sapair-og/chat-with-pdf"><img src="https://img.shields.io/badge/View_Repo-black?style=flat-square&logo=github" alt="Repository"/></a>
-        <img src="https://img.shields.io/badge/Python-blue?style=flat-square" alt="Python"/>
-        <img src="https://img.shields.io/badge/LLM-green?style=flat-square" alt="LLM"/>
+        <a href="https://github.com/Sapair-og/CogniCode"><img src="https://img.shields.io/badge/View_Repo-black?style=flat-square&logo=github" alt="Repository"/></a>
+        <img src="https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+        <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square" alt="LangGraph"/>
+        <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square" alt="FAISS"/>
+        <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="Pytest"/>
+        <img src="https://img.shields.io/badge/Multi--Agent-8A2BE2?style=flat-square" alt="Multi-Agent"/>
       </p>
     </td>
   </tr>
   <tr>
-    <td width="50%">
-      <h3>💻 Code Debugger</h3>
-      <p>An automated assistant designed to scan source code, pinpoint logical and syntax errors, and suggest clean optimizations or refactors.</p>
+    <td width="50%" valign="top">
+      <h3>🧠 Brain Tumor Detection</h3>
+      <p>Classifies brain MRI scans into four classes: <b>glioma, meningioma, pituitary and no tumor</b>. It uses a ResNet50V2 model with transfer learning and fine-tuning, and has an interactive Gradio app for predictions.</p>
       <p>
-        <a href="https://github.com/Sapair-og/code-debugger"><img src="https://img.shields.io/badge/View_Repo-black?style=flat-square&logo=github" alt="Repository"/></a>
-        <img src="https://img.shields.io/badge/JavaScript-yellow?style=flat-square" alt="JavaScript"/>
-        <img src="https://img.shields.io/badge/Node.js-green?style=flat-square" alt="NodeJS"/>
+        <a href="https://github.com/Sapair-og/brain_tumor"><img src="https://img.shields.io/badge/View_Repo-black?style=flat-square&logo=github" alt="Repository"/></a>
+        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
+        <img src="https://img.shields.io/badge/ResNet50V2-555?style=flat-square" alt="ResNet50V2"/>
+        <img src="https://img.shields.io/badge/Gradio-F97316?style=flat-square" alt="Gradio"/>
       </p>
     </td>
-    <td width="50%">
-      <h3>🇯🇵 Japanese SRS</h3>
-      <p>A Spaced Repetition System (SRS) app specifically tailored for learning Japanese characters, vocabulary, and grammar rules with custom review schedules.</p>
+    <td width="50%" valign="top">
+      <h3>🩺 Pneumonia Detection</h3>
+      <p>Detects pneumonia in chest X-rays using a DenseNet121 model trained with transfer learning. It includes training, evaluation and visualisation pipelines, plus a Gradio diagnostic app.</p>
+      <p>
+        <a href="https://github.com/Sapair-og/pneumonia_detection"><img src="https://img.shields.io/badge/View_Repo-black?style=flat-square&logo=github" alt="Repository"/></a>
+        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
+        <img src="https://img.shields.io/badge/DenseNet121-555?style=flat-square" alt="DenseNet121"/>
+        <img src="https://img.shields.io/badge/Gradio-F97316?style=flat-square" alt="Gradio"/>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🇯🇵 Kyōto-Slate — Japanese SRS</h3>
+      <p>A spaced-repetition app for Japanese vocabulary. It has a WaniKani-style dashboard, a JLPT N5/N4 Kanji Dojo with stroke-order tracing, typed answers with IME transliteration, audio pronunciation, and themed particle backgrounds.</p>
       <p>
         <a href="https://github.com/Sapair-og/japanese_srs"><img src="https://img.shields.io/badge/View_Repo-black?style=flat-square&logo=github" alt="Repository"/></a>
-        <img src="https://img.shields.io/badge/React-blue?style=flat-square" alt="React"/>
-        <img src="https://img.shields.io/badge/Vite-purple?style=flat-square" alt="Vite"/>
+        <a href="https://japanese-srs-omega.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-000000?style=flat-square&logo=vercel&logoColor=white" alt="Live Demo"/></a>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>💬 Chat with PDF</h3>
+      <p>A Streamlit RAG app for asking plain-English questions across several PDFs. It uses LangChain chunking, Hugging Face embeddings and FAISS vector search, and supports <b>OpenAI and Google Gemini</b> with conversational memory.</p>
+      <p>
+        <a href="https://github.com/Sapair-og/chat-with-pdf"><img src="https://img.shields.io/badge/View_Repo-black?style=flat-square&logo=github" alt="Repository"/></a>
+        <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square" alt="LangChain"/>
+        <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
+        <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square" alt="FAISS"/>
       </p>
     </td>
   </tr>
