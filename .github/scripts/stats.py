@@ -9,6 +9,8 @@ import sys
 import urllib.request
 from html import escape
 
+PALETTE = ["#F472B6", "#A78BFA", "#7DD3FC", "#FBCFE8", "#C084FC", "#38BDF8"]
+
 QUERY = """
 query($login: String!) {
   user(login: $login) {
@@ -21,7 +23,7 @@ query($login: String!) {
       totalCount
       nodes {
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
-          edges { size node { name color } }
+          edges { size node { name } }
         }
       }
     }
@@ -44,18 +46,17 @@ def fetch(login, token):
 
 
 def top_languages(repos, limit=6):
-    totals, colors = {}, {}
+    totals = {}
     for repo in repos:
         for edge in repo["languages"]["edges"]:
             name = edge["node"]["name"]
             totals[name] = totals.get(name, 0) + edge["size"]
-            colors[name] = edge["node"]["color"] or "#8b949e"
     grand = sum(totals.values()) or 1
     ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)
-    langs = [(n, s / grand * 100, colors[n]) for n, s in ranked[:limit]]
+    langs = [(n, s / grand * 100, PALETTE[i]) for i, (n, s) in enumerate(ranked[:limit])]
     rest = sum(s for _, s in ranked[limit:]) / grand * 100
     if rest >= 0.5:
-        langs.append(("Other", rest, "#8b949e"))
+        langs.append(("Other", rest, "#64748B"))
     return langs
 
 
@@ -100,13 +101,10 @@ def render(user):
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
 <style>
-  :root {{ --bg:#ffffff; --border:#d0d7de; --fg:#1f2328; --muted:#59636e; --accent:#8250df; }}
-  @media (prefers-color-scheme: dark) {{
-    :root {{ --bg:#0d1117; --border:#30363d; --fg:#e6edf3; --muted:#9198a1; --accent:#a371f7; }}
-  }}
+  :root {{ --border:#4C1D95; --fg:#E0E7FF; --muted:#A5B4FC; --accent:#F472B6; }}
   text {{ font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }}
-  .card {{ fill: var(--bg); stroke: var(--border); }}
-  .title {{ font-size: 17px; font-weight: 600; fill: var(--fg); }}
+  .card {{ fill: url(#bg); stroke: var(--border); }}
+  .title {{ font-size: 17px; font-weight: 700; fill: url(#titleGrad); }}
   .label {{ font-size: 14px; fill: var(--fg); }}
   .value {{ font-size: 14px; font-weight: 700; fill: var(--accent); }}
   .muted {{ font-size: 13px; fill: var(--muted); }}
@@ -117,6 +115,10 @@ def render(user):
   @keyframes fade {{ to {{ opacity: 1; }} }}
   @keyframes grow {{ to {{ transform: scaleX(1); }} }}
 </style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0F0C29"/><stop offset="1" stop-color="#2A1B4E"/></linearGradient>
+  <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FBCFE8"/><stop offset="1" stop-color="#A78BFA"/></linearGradient>
+</defs>
 <rect class="card" x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="12"/>
 <text x="28" y="40" class="title">GitHub Stats</text>
 <text x="430" y="40" class="title">Most Used Languages</text>
